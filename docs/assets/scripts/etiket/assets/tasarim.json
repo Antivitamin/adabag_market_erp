@@ -1,0 +1,285 @@
+[
+  {
+    "key": "width_mm",
+    "label": "Genişlik (mm)",
+    "group": "Sayfa",
+    "default": 97,
+    "min": 30,
+    "max": 110,
+    "step": 0.5
+  },
+  {
+    "key": "height_mm",
+    "label": "Yükseklik (mm)",
+    "group": "Sayfa",
+    "default": 50,
+    "min": 20,
+    "max": 150,
+    "step": 0.5
+  },
+  {
+    "key": "rotation",
+    "label": "Baskı Yönü",
+    "group": "Sayfa",
+    "default": 90,
+    "min": 0,
+    "max": 270,
+    "step": 90
+  },
+  {
+    "key": "margin_left",
+    "label": "Sol Boşluk (mm)",
+    "group": "Sayfa",
+    "default": 3,
+    "min": 0,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "margin_top",
+    "label": "Üst Boşluk (mm)",
+    "group": "Sayfa",
+    "default": 3,
+    "min": 0,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "title_pt",
+    "label": "Yazı Boyutu (pt)",
+    "group": "Ürün Adı",
+    "default": 14,
+    "min": 6,
+    "max": 48,
+    "step": 1
+  },
+  {
+    "key": "info_pt",
+    "label": "Yazı Boyutu (pt)",
+    "group": "Bilgi Satırları",
+    "default": 8,
+    "min": 6,
+    "max": 48,
+    "step": 1
+  },
+  {
+    "key": "price_pt",
+    "label": "Yazı Boyutu (pt)",
+    "group": "Fiyat",
+    "default": 28,
+    "min": 6,
+    "max": 48,
+    "step": 1
+  },
+  {
+    "key": "origin_pt",
+    "label": "Yazı Boyutu (pt)",
+    "group": "Menşei",
+    "default": 10,
+    "min": 6,
+    "max": 48,
+    "step": 1
+  },
+  {
+    "key": "barcode_pt",
+    "label": "Yazı Boyutu (pt)",
+    "group": "Barkod",
+    "default": 10,
+    "min": 6,
+    "max": 48,
+    "step": 1
+  },
+  {
+    "key": "title_dx",
+    "label": "Sağa Kaydır (mm)",
+    "group": "Ürün Adı",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "title_dy",
+    "label": "Aşağı Kaydır (mm)",
+    "group": "Ürün Adı",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "info_dx",
+    "label": "Sağa Kaydır (mm)",
+    "group": "Bilgi Satırları",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "info_dy",
+    "label": "Aşağı Kaydır (mm)",
+    "group": "Bilgi Satırları",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "price_dx",
+    "label": "Sağa Kaydır (mm)",
+    "group": "Fiyat",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "price_dy",
+    "label": "Aşağı Kaydır (mm)",
+    "group": "Fiyat",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "logo_dx",
+    "label": "Sağa Kaydır (mm)",
+    "group": "Logo",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "logo_dy",
+    "label": "Aşağı Kaydır (mm)",
+    "group": "Logo",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "local_dx",
+    "label": "Sağa Kaydır (mm)",
+    "group": "Yerli Üretim",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "local_dy",
+    "label": "Aşağı Kaydır (mm)",
+    "group": "Yerli Üretim",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "origin_dx",
+    "label": "Sağa Kaydır (mm)",
+    "group": "Menşei",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "origin_dy",
+    "label": "Aşağı Kaydır (mm)",
+    "group": "Menşei",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "barcode_dx",
+    "label": "Sağa Kaydır (mm)",
+    "group": "Barkod",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "barcode_dy",
+    "label": "Aşağı Kaydır (mm)",
+    "group": "Barkod",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.5
+  },
+  {
+    "key": "logo_scale",
+    "label": "Boyut Çarpanı",
+    "group": "Logo",
+    "default": 1,
+    "min": 0.5,
+    "max": 1.5,
+    "step": 0.05
+  },
+  {
+    "key": "local_scale",
+    "label": "Boyut Çarpanı",
+    "group": "Yerli Üretim",
+    "default": 1,
+    "min": 0.5,
+    "max": 1.5,
+    "step": 0.05
+  },
+  {
+    "key": "barcode_scale",
+    "label": "Boyut Çarpanı",
+    "group": "Barkod",
+    "default": 1,
+    "min": 0.5,
+    "max": 1.5,
+    "step": 0.05
+  },
+  {
+    "key": "old_pt",
+    "label": "Eski Fiyat Punto",
+    "default": 13,
+    "min": 6,
+    "max": 24,
+    "step": 0.1,
+    "group": "Eski Fiyat",
+    "campaign": true
+  },
+  {
+    "key": "old_dx",
+    "label": "Eski Fiyat Yatay (mm)",
+    "default": 0,
+    "min": -10,
+    "max": 10,
+    "step": 0.1,
+    "group": "Eski Fiyat",
+    "campaign": true
+  },
+  {
+    "key": "old_dy",
+    "label": "Eski Fiyat Dikey (mm)",
+    "default": 0,
+    "min": -5,
+    "max": 5,
+    "step": 0.1,
+    "group": "Eski Fiyat",
+    "campaign": true
+  },
+  {
+    "key": "strike_mm",
+    "label": "Çizgi Kalınlığı (mm)",
+    "default": 0.4,
+    "min": 0.2,
+    "max": 1,
+    "step": 0.1,
+    "group": "Eski Fiyat",
+    "campaign": true
+  }
+]
