@@ -35,16 +35,17 @@
   <style>
     html,body { margin:0; min-height:100%; background:#e8f1f6; }
     #app-loading { position:fixed; inset:0; z-index:9999; display:flex;
-      align-items:center; justify-content:center; background:#e8f1f6; }
+      align-items:center; justify-content:center; flex-direction:column; gap:24px; background:#e8f1f6; }
+    #app-loading .loading-logo { display:block; width:min(82vw,380px); max-height:45vh; object-fit:contain; padding:14px; box-sizing:border-box; border-radius:16px; background:transparent; }
     #app-loading .loading-spinner { width:28px; height:28px; border:3px solid #35648130;
       border-top-color:#356481; border-radius:50%; animation:loading-spin .9s linear infinite; }
     @keyframes loading-spin { to { transform:rotate(360deg); } }
     @media(prefers-reduced-motion:reduce) { #app-loading .loading-spinner { animation:none; } }
-    @media(prefers-color-scheme:dark) { html,body,#app-loading { background:#1d2a38; } }
   </style>
 </head>
 <body>
   <div id="app-loading" role="status" aria-label="Adabağ Market yükleniyor">
+    <img class="loading-logo" src="icons/launch-logo-v1.png" alt="Adabağ Hipermarket" fetchpriority="high">
     <span class="loading-spinner" aria-hidden="true"></span>
   </div>
   <script>window.adabagAppReady = function () {
@@ -59,7 +60,7 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="pwa-install.js?v=20261107-2" defer></script>
-  <script src="flutter_bootstrap.js?v=20261107-kullanici-ad-simge-14" async></script>
+  <script src="flutter_bootstrap.js?v=20261107-yazili-yukleme-15" async></script>
 </body>
 </html>
 
