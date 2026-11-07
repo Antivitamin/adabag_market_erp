@@ -25,17 +25,18 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Adabağ Market">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-v7.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-v8.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="icons/pwa-192-v7.png?v=20261107-shortcut-8" sizes="192x192"/>
+  <link rel="icon" type="image/png" href="icons/pwa-192-v8.png?v=20261107-shortcut-9" sizes="192x192"/>
 
   <title>Adabağ Market</title>
-  <link rel="manifest" href="manifest.json?v=20261107-icons-8">
+  <link rel="manifest" href="manifest.json?v=20261107-icons-9">
   <style>
     html,body { margin:0; min-height:100%; background:#e8f1f6; }
     #app-loading { position:fixed; inset:0; z-index:9999; display:flex;
-      align-items:center; justify-content:center; background:#e8f1f6; }
+      align-items:center; justify-content:center; flex-direction:column; gap:24px; background:#e8f1f6; }
+    #app-loading .loading-logo { display:block; width:min(82vw,380px); max-height:45vh; object-fit:contain; padding:14px; box-sizing:border-box; background:#f6fafc; border-radius:16px; }
     #app-loading .loading-spinner { width:28px; height:28px; border:3px solid #35648130;
       border-top-color:#356481; border-radius:50%; animation:loading-spin .9s linear infinite; }
     @keyframes loading-spin { to { transform:rotate(360deg); } }
@@ -45,11 +46,12 @@
 </head>
 <body>
   <div id="app-loading" role="status" aria-label="Adabağ Market yükleniyor">
+    <img class="loading-logo" src="icons/launch-logo-v1.png" alt="Adabağ Hipermarket" fetchpriority="high">
     <span class="loading-spinner" aria-hidden="true"></span>
   </div>
-  <script>window.addEventListener('flutter-first-frame', function () {
+  <script>window.adabagAppReady = function () {
     document.getElementById('app-loading')?.remove();
-  }, { once:true });</script>
+  };</script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
@@ -59,7 +61,7 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="pwa-install.js?v=20261107-2" defer></script>
-  <script src="flutter_bootstrap.js?v=20261107-tek-acilis-kisayol-5" async></script>
+  <script src="flutter_bootstrap.js?v=20261107-acilis-hazir-simge-6" async></script>
 </body>
 </html>
 
