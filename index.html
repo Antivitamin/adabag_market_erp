@@ -1,65 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/adabag_market_erp/">
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Adabağ Market stok, fiyat ve son kullanma tarihi yönetimi.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Adabağ Market">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-v8.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="icons/pwa-192-v8.png?v=20261107-shortcut-9" sizes="192x192"/>
-
-  <title>Adabağ Market</title>
-  <link rel="manifest" href="manifest.json?v=20261107-icons-9">
-  <style>
-    html,body { margin:0; min-height:100%; background:#e8f1f6; }
-    #app-loading { position:fixed; inset:0; z-index:9999; display:flex;
-      align-items:center; justify-content:center; background:#e8f1f6; }
-    #app-loading .loading-spinner { width:28px; height:28px; border:3px solid #35648130;
-      border-top-color:#356481; border-radius:50%; animation:loading-spin .9s linear infinite; }
-    @keyframes loading-spin { to { transform:rotate(360deg); } }
-    @media(prefers-reduced-motion:reduce) { #app-loading .loading-spinner { animation:none; } }
-    @media(prefers-color-scheme:dark) { html,body,#app-loading { background:#1d2a38; } }
-  </style>
-</head>
-<body>
-  <div id="app-loading" role="status" aria-label="Adabağ Market yükleniyor">
-    <span class="loading-spinner" aria-hidden="true"></span>
-  </div>
-  <script>window.adabagAppReady = function () {
-    document.getElementById('app-loading')?.remove();
-  };</script>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="pwa-install.js?v=20261107-2" defer></script>
-  <script src="flutter_bootstrap.js?v=20261107-ek-logo-kaldirildi-7" async></script>
-</body>
-</html>
+import hashlib,re
+from pathlib import Path
+p=Path('.dart_tool/bulut_tasarim_release')
+for filename in ['index.html','flutter_bootstrap.js']:
+ f=p/filename;s=f.read_text(encoding='utf-8')
+ assert '20261107-yazili-buyuk-logo-8' in s, filename
+ s=s.replace('src="pwa-install.js?v=20261107-2"','src="pwa-install.js?v=20261107-2"')
+ f.write_text(s.replace('20261107-yazili-buyuk-logo-8','20261107-yazili-buyuk-logo-8'),encoding='utf-8')
+w=p/'flutter_service_worker.js'
+if w.exists():
+ s=w.read_text(encoding='utf-8')
+ for key,filename in [('index.html','index.html'),('/','index.html'),('flutter_bootstrap.js','flutter_bootstrap.js')]:
+  digest=hashlib.md5((p/filename).read_bytes()).hexdigest()
+  s=re.sub(r'("'+re.escape(key)+r'"\s*:\s*")[0-9a-f]+(")',lambda m:m.group(1)+digest+m.group(2),s)
+ w.write_text(s,encoding='utf-8')
 
