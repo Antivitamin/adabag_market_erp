@@ -69126,7 +69126,7 @@ g=B.e.aF(j*(h?0:i)*100)
 f=B.e.aF(j*(h?0:i)*100)
 e=k.r
 h=e==null?0:e
-p.push([l.a+1,k.a,k.b,j,k.c,i,B.e.aF((g/100+B.e.aF(f/100*h/100*100)/100)*100)/100])}d=A.bg8(B.aaP,"Teklif Formu \xb7 "+a,null,b,p,"Teklif Formu",!0,["","TOPLAMLAR (KDV hari\xe7 / dahil)","","","",c.ga5g(),c.ga0x()],B.ae)
+p.push([l.a+1,k.a,k.b,j,k.c,i,B.e.aF((g/100+B.e.aF(f/100*h/100*100)/100)*100)/100])}d=A.bg8(B.aaP,"Teklif Formu \xb7 "+a,null,b,p,"Teklif Formu",!0,["TOPLAM","","","","",c.ga5g(),c.ga0x()],B.ae)
 s=2
 return A.i(A.XC().oP(d,"xlsx",B.nD,"Teklif_"+A.dP("yyyyMMdd_HHmmss",null).ap(new A.b5(Date.now(),0,!1))),$async$$0)
 case 2:return A.p(null,r)}})
