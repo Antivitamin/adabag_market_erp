@@ -43,7 +43,7 @@ _flutter.buildConfig = {"engineRevision":"deb287481e3ce9468f3434937ced4240a70539
 
 // A new URL for each release avoids stale JavaScript in installed PWAs.
 for (const build of _flutter.buildConfig.builds) {
-  if (build.mainJsPath) build.mainJsPath += '?v=20261112-teklif-formu-37';
+  if (build.mainJsPath) build.mainJsPath += '?v=20261112-teklif-stok-38';
 }
 (async () => {
   if ('serviceWorker' in navigator) {
