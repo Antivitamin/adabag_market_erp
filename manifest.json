@@ -6,7 +6,7 @@
   "background_color": "#E8F1F6",
   "theme_color": "#356481",
   "description": "Adabağ Market ERP",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "prefer_related_applications": false,
   "icons": [
     {
