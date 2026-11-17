@@ -13429,27 +13429,27 @@ bAG:function bAG(){},
 bAH:function bAH(){},
 te:function te(){},
 aR7:function aR7(){},
-xk(c5,c6,c7,c8,c9,d0,d1,d2,d3,d4,d5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6='<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">',b7='" customWidth="1"/>',b8="</cols><sheetData>",b9='<mergeCell ref="A',c0='" customHeight="1">',c1=new A.bAB(),c2=new A.bAA(),c3=new A.bAz(c2,c1),c4=c8!=null
-if(d3)s=2
-else s=c4?3:4
-r=c4?2:0
-q=c2.$1(r)
+xk(c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5='<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">',b6='" customWidth="1"/>',b7="</cols><sheetData>",b8='<mergeCell ref="A',b9='" customHeight="1">',c0=new A.bAB(),c1=new A.bAA(),c2=new A.bAz(c1,c0),c3=c7!=null
+if(d2)s=2
+else s=c3?3:4
+r=c3?2:0
+q=c1.$1(r)
 p=s+1
-o=s+d0.length
-n=d4==null
+o=s+c9.length
+n=d3==null
 m=o+(n?1:3)
-l=c2.$1(c5.length-1)
-k=new A.dm(b6)
-if(d3){k.a='<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView workbookViewId="0" showGridLines="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols>'
+l=c1.$1(c4.length-1)
+k=new A.dm(b5)
+if(d2){k.a='<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheetPr><pageSetUpPr fitToPage="1"/></sheetPr><sheetViews><sheetView workbookViewId="0" showGridLines="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols>'
 for(j=t.S,i=A.i7(B.b7T,0,j),h=J.aF(i.a),i=i.b,g=new A.h9(h,i);g.p();){f=g.c
 f=f>=0?new A.a1(i+f,h.gI(h)):A.a4(A.cl())
 e=""+(f.a+1)
-k.a+='<col min="'+e+'" max="'+e+'" width="'+f.b+b7}d=new A.bAC(k,c3)
-k.a+=b8
+k.a+='<col min="'+e+'" max="'+e+'" width="'+f.b+b6}d=new A.bAC(k,c2)
+k.a+=b7
 i=t.t
-d.$4(1,98,["","","ADABA\u011e MARKET \xb7 TEKL\u0130F FORMU\n"+c9,"","","","Tarih: "+c6,""],A.b([2,2,2,2,2,2,6,6],i))
-d.$4(2,40,c5,A.br(c5.length,3,!1,j))
-for(j=A.i7(d0,0,t.Dn),h=J.aF(j.a),j=j.b,g=new A.h9(h,j);g.p();){f=g.c
+d.$4(1,108,["","","ADABA\u011e MARKET \xb7 TEKL\u0130F FORMU\n"+c8,"","","","Tarih: "+c5,""],A.b([2,2,2,2,2,2,6,6],i))
+d.$4(2,40,c4,A.br(c4.length,3,!1,j))
+for(j=A.i7(c9,0,t.Dn),h=J.aF(j.a),j=j.b,g=new A.h9(h,j);g.p();){f=g.c
 f=f>=0?new A.a1(j+f,h.gI(h)):A.a4(A.cl())
 c=f.a
 b=f.b
@@ -13457,90 +13457,86 @@ a=B.f.ak(B.n.ey(new A.w0(J.J(J.d(b,1))).gq(0)/32),1,15)
 a0=(c&1)===0?A.b([1,4,1,1,1,5,5,5],i):A.b([9,10,9,9,9,11,11,11],i)
 d.$4(c+3,23+(a-1)*15,b,a0)}a1=o+1
 if(n)d.$4(a1,22,B.bcj,A.b([1,1,1,1,1,5,5,5],i))
-else for(j=A.i7(A.b([new A.a1("KDV HAR\u0130\xc7 TOPLAM",d4.c),new A.a1("KDV TOPLAMI",d4.b),new A.a1("KDV DAH\u0130L GENEL TOPLAM",d4.a)],t.qb),0,t.K_),h=J.aF(j.a),j=j.b,g=new A.h9(h,j);g.p();){f=g.c
+else for(j=A.i7(A.b([new A.a1("KDV HAR\u0130\xc7 TOPLAM",d3.c),new A.a1("KDV TOPLAMI",d3.b),new A.a1("KDV DAH\u0130L GENEL TOPLAM",d3.a)],t.qb),0,t.K_),h=J.aF(j.a),j=j.b,g=new A.h9(h,j);g.p();){f=g.c
 f=f>=0?new A.a1(j+f,h.gI(h)):A.a4(A.cl())
 a2=f.b
 d.$4(a1+f.a,26,["","","","",a2.a,"","",a2.b],A.b([0,0,0,0,7,7,7,8],i))}j='</sheetData><mergeCells count="'+(n?4:6)+'"><mergeCell ref="A1:B1"/><mergeCell ref="C1:F1"/><mergeCell ref="G1:H1"/>'
 j=k.a+=j
 if(n){n=""+a1
-n=k.a=j+(b9+n+":B"+n+'"/>')}else for(n=j,c=a1;c<=m;++c,n=j){j=""+c
+n=k.a=j+(b8+n+":B"+n+'"/>')}else for(n=j,c=a1;c<=m;++c,n=j){j=""+c
 j=n+('<mergeCell ref="E'+j+":G"+j+'"/>')
 k.a=j}n=k.a=n+'</mergeCells><pageMargins left="0.3937" right="0.3937" top="0.748" bottom="0.748" header="0.315" footer="0.315"/><pageSetup paperSize="9" orientation="portrait" fitToWidth="1" fitToHeight="0"/>'
-if(c4){n+='<drawing r:id="rId1"/>'
-k.a=n}}else{n=c4?'<sheetPr><pageSetUpPr fitToPage="1"/></sheetPr>':""
-j=c4?' showGridLines="0"':""
+if(c3){n+='<drawing r:id="rId1"/>'
+k.a=n}}else{n=c3?'<sheetPr><pageSetUpPr fitToPage="1"/></sheetPr>':""
+j=c3?' showGridLines="0"':""
 i=""+s
-j=k.a=b6+(n+'<sheetViews><sheetView workbookViewId="0"'+j+'><pane ySplit="'+i+'" topLeftCell="A'+p+'" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols>')
-for(n=d2!=null,a3=0;a3<c5.length;j=h){if(n&&a3<d2.length)a4=d2[a3]
-else if(c4&&a3<4){h=B.b45[a3]
+j=k.a=b5+(n+'<sheetViews><sheetView workbookViewId="0"'+j+'><pane ySplit="'+i+'" topLeftCell="A'+p+'" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews><cols>')
+for(n=d1!=null,a3=0;a3<c4.length;j=h){if(n&&a3<d1.length)a4=d1[a3]
+else if(c3&&a3<4){h=B.b45[a3]
 a4=h}else{if(a3===1)h=48
 else if(a3===2)h=23
 else h=a3===3?30:22
 a4=h}++a3
 h=""+a3
-h=j+('<col min="'+h+'" max="'+h+'" width="'+a4+b7)
-k.a=h}k.a=j+b8
-a5=new A.bAD(c7,c4,r,c3,c5,c2)
-if(c7&&c4)n=80
-else n=c4?55:32
-j=A.j(a5.$3(c9,1,1))
-if(c7&&c4)h=53
-else h=c4?47:25
-g=A.j(a5.$3(c6,2,2))
-if(c7)f=32
-else f=c4?24:32
-f='<row r="1" ht="'+n+c0+j+'</row><row r="2" ht="'+h+c0+g+'</row><row r="'+i+'" ht="'+f+c0
+h=j+('<col min="'+h+'" max="'+h+'" width="'+a4+b6)
+k.a=h}k.a=j+b7
+a5=new A.bAD(c6,c3,r,c2,c4,c1)
+if(c6&&c3)n=80
+else n=c3?55:32
+j=A.j(a5.$3(c8,1,1))
+if(c6&&c3)h=53
+else h=c3?47:25
+g=A.j(a5.$3(c5,2,2))
+if(c6)f=32
+else f=c3?24:32
+f='<row r="1" ht="'+n+b9+j+'</row><row r="2" ht="'+h+b9+g+'</row><row r="'+i+'" ht="'+f+b9
 f=k.a+=f
-for(n=f,a3=0;a3<c5.length;++a3){n=c5[a3]
-n=A.j(c3.$4(n,a3,s,c4&&a3===0?8:3))
+for(n=f,a3=0;a3<c4.length;++a3){n=c4[a3]
+n=A.j(c2.$4(n,a3,s,c3&&a3===0?8:3))
 n=k.a+=n}n=k.a=n+"</row>"
-for(c=0;c<d0.length;++c){a6=c+p
-j=c4?23:30
-k.a=n+('<row r="'+a6+'" ht="'+j+c0)
-for(n=(c&1)===0,a3=0;a3<J.aO(d0[c]);++a3){j=J.d(d0[c],a3)
-if(c4)if(a3===0)h=n?6:7
+for(c=0;c<c9.length;++c){a6=c+p
+j=c3?23:30
+k.a=n+('<row r="'+a6+'" ht="'+j+b9)
+for(n=(c&1)===0,a3=0;a3<J.aO(c9[c]);++a3){j=J.d(c9[c],a3)
+if(c3)if(a3===0)h=n?6:7
 else h=n?4:5
-else if(typeof J.d(d0[c],a3)=="number")h=n?5:7
+else if(typeof J.d(c9[c],a3)=="number")h=n?5:7
 else h=n?4:6
-h=A.j(c3.$4(j,a3,a6,h))
+h=A.j(c2.$4(j,a3,a6,h))
 k.a+=h}n=k.a+="</row>"}a6=o+2
-for(n=d5.length,a7=a6,a8=0;j=d5.length,a8<j;d5.length===n||(0,A.D)(d5),++a8){j='<row r="'+a7+'" ht="28" customHeight="1">'+A.j(c3.$4(d5[a8],0,a7,2))+"</row>"
+for(n=d4.length,a7=a6,a8=0;j=d4.length,a8<j;d4.length===n||(0,A.D)(d4),++a8){j='<row r="'+a7+'" ht="28" customHeight="1">'+A.j(c2.$4(d4[a8],0,a7,2))+"</row>"
 k.a+=j;++a7}n=k.a+='</sheetData><autoFilter ref="A'+i+":"+l+o+'"/><mergeCells count="'+(2+j)+'"><mergeCell ref="'+q+"1:"+l+'1"/><mergeCell ref="'+q+"2:"+l+'2"/>'
-for(c=0;c<d5.length;++c){n=""+(a6+c)
-n=b9+n+":"+A.j(c2.$1(c5.length-1))+n+'"/>'
+for(c=0;c<d4.length;++c){n=""+(a6+c)
+n=b8+n+":"+A.j(c1.$1(c4.length-1))+n+'"/>'
 n=k.a+=n}n=k.a=n+"</mergeCells>"
-if(c4){n+='<printOptions gridLines="0"/><pageMargins left="0.30" right="0.30" top="0.35" bottom="0.35" header="0.15" footer="0.15"/><pageSetup paperSize="9" orientation="'+(c7?"landscape":"portrait")+'" fitToWidth="1" fitToHeight="0"/><drawing r:id="rId1"/>'
+if(c3){n+='<printOptions gridLines="0"/><pageMargins left="0.30" right="0.30" top="0.35" bottom="0.35" header="0.15" footer="0.15"/><pageSetup paperSize="9" orientation="'+(c6?"landscape":"portrait")+'" fitToWidth="1" fitToHeight="0"/><drawing r:id="rId1"/>'
 k.a=n}}k.a=n+"</worksheet>"
 a9=new A.Zh(A.b([],t.Ck),A.x(t.N,t.S))
 n=new A.bAy(a9)
-n.$2("[Content_Types].xml",'<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>'+(c4?'<Default Extension="png" ContentType="image/png"/><Override PartName="/xl/drawings/drawing1.xml" ContentType="application/vnd.openxmlformats-officedocument.drawing+xml"/>':"")+'<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>')
+n.$2("[Content_Types].xml",'<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>'+(c3?'<Default Extension="png" ContentType="image/png"/><Override PartName="/xl/drawings/drawing1.xml" ContentType="application/vnd.openxmlformats-officedocument.drawing+xml"/>':"")+'<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>')
 n.$2("_rels/.rels",'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>')
-b0="'"+A.j(c1.$1(A.aq(d1,"'","''")))+"'"
-if(c4){if(d3)j=m
-else{j=d5.length
+b0="'"+A.j(c0.$1(A.aq(d0,"'","''")))+"'"
+if(c3){if(d2)j=m
+else{j=d4.length
 j=j===0?o:o+1+j}i=""+s
 b1='<definedNames><definedName name="_xlnm.Print_Area" localSheetId="0">'+b0+"!$A$1:$"+l+"$"+j+'</definedName><definedName name="_xlnm.Print_Titles" localSheetId="0">'+b0+"!$"+i+":$"+i+"</definedName></definedNames>"}else b1=""
-n.$2("xl/workbook.xml",'<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="'+A.j(c1.$1(d1))+'" sheetId="1" r:id="rId1"/></sheets>'+b1+"</workbook>")
+n.$2("xl/workbook.xml",'<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="'+A.j(c0.$1(d0))+'" sheetId="1" r:id="rId1"/></sheets>'+b1+"</workbook>")
 n.$2("xl/_rels/workbook.xml.rels",'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>')
-if(d3)j='<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">\n  <fonts count="3"><font><sz val="11"/><name val="Calibri"/><color rgb="FF16273C"/></font><font><b/><sz val="16"/><name val="Calibri"/><color rgb="FF16273C"/></font><font><b/><sz val="11"/><name val="Calibri"/><color rgb="FF16273C"/></font></fonts>\n  <fills count="4"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFE5EEF8"/><bgColor indexed="64"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF5F7FA"/><bgColor indexed="64"/></patternFill></fill></fills>\n  <borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"/><right style="thin"/><top style="thin"/><bottom style="thin"/><diagonal/></border></borders>\n  <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>\n  <cellXfs count="12">\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf>\n    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" xfId="0" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" indent="1" wrapText="1"/></xf>\n    <xf numFmtId="4" fontId="0" fillId="0" borderId="1" xfId="0" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="center" indent="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="1" xfId="0" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="1" xfId="0" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" indent="1"/></xf>\n    <xf numFmtId="4" fontId="2" fillId="0" borderId="1" xfId="0" applyFont="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="center" indent="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="3" borderId="1" xfId="0" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="3" borderId="1" xfId="0" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" indent="1" wrapText="1"/></xf>\n    <xf numFmtId="4" fontId="0" fillId="3" borderId="1" xfId="0" applyFill="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="center" indent="1"/></xf>\n  </cellXfs>\n</styleSheet>'
-else j=c4?'<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">\n  <fonts count="3">\n    <font><sz val="12"/><name val="Calibri"/><color rgb="FF000000"/></font>\n    <font><b/><sz val="18"/><name val="Calibri"/><color rgb="FF000000"/></font>\n    <font><b/><sz val="12"/><name val="Calibri"/><color rgb="FF000000"/></font>\n  </fonts>\n  <fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF5F7FA"/><bgColor indexed="64"/></patternFill></fill></fills>\n  <borders count="3"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFD6DFE8"/></left><right style="thin"><color rgb="FFD6DFE8"/></right><top style="thin"><color rgb="FFD6DFE8"/></top><bottom style="thin"><color rgb="FFD6DFE8"/></bottom><diagonal/></border><border><left style="thin"><color rgb="FF64748B"/></left><right style="thin"><color rgb="FF64748B"/></right><top style="thin"><color rgb="FF64748B"/></top><bottom style="thin"><color rgb="FF64748B"/></bottom><diagonal/></border></borders>\n  <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>\n  <cellXfs count="9">\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="0"/>\n    <xf numFmtId="0" fontId="1" fillId="0" borderId="2" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="center"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="2" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="2" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" horizontal="center"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" horizontal="center"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="2" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" horizontal="center"/></xf>\n  </cellXfs>\n</styleSheet>':'<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><numFmts count="1"><numFmt numFmtId="164" formatCode="#,##0.00"/></numFmts><fonts count="3"><font><sz val="12"/><name val="Calibri"/><color rgb="FF172554"/></font><font><b/><sz val="18"/><name val="Calibri"/><color rgb="FFFFFFFF"/></font><font><b/><sz val="12"/><name val="Calibri"/><color rgb="FFFFFFFF"/></font></fonts><fills count="5"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF1E2769"/><bgColor indexed="64"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FF334155"/><bgColor indexed="64"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF1F5F9"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="8"><xf/><xf fontId="1" fillId="2" applyFill="1" applyFont="1"><alignment vertical="center"/></xf><xf fontId="2" fillId="3" applyFill="1" applyFont="1"><alignment vertical="center"/></xf><xf fontId="2" fillId="2" applyFill="1" applyFont="1"><alignment wrapText="1" vertical="center"/></xf><xf fontId="0"><alignment vertical="center" wrapText="1"/></xf><xf fontId="0" numFmtId="164" applyNumberFormat="1"><alignment vertical="center"/></xf><xf fontId="0" fillId="4" applyFill="1"><alignment vertical="center" wrapText="1"/></xf><xf fontId="0" fillId="4" applyFill="1" numFmtId="164" applyNumberFormat="1"><alignment vertical="center"/></xf></cellXfs></styleSheet>'
+if(d2)j='<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">\n  <fonts count="3"><font><sz val="11"/><name val="Calibri"/><color rgb="FF16273C"/></font><font><b/><sz val="16"/><name val="Calibri"/><color rgb="FF16273C"/></font><font><b/><sz val="11"/><name val="Calibri"/><color rgb="FF16273C"/></font></fonts>\n  <fills count="4"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFE5EEF8"/><bgColor indexed="64"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF5F7FA"/><bgColor indexed="64"/></patternFill></fill></fills>\n  <borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"/><right style="thin"/><top style="thin"/><bottom style="thin"/><diagonal/></border></borders>\n  <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>\n  <cellXfs count="12">\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf>\n    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" xfId="0" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" indent="1" wrapText="1"/></xf>\n    <xf numFmtId="4" fontId="0" fillId="0" borderId="1" xfId="0" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="center" indent="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="1" xfId="0" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="1" xfId="0" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" indent="1"/></xf>\n    <xf numFmtId="4" fontId="2" fillId="0" borderId="1" xfId="0" applyFont="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="center" indent="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="3" borderId="1" xfId="0" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="3" borderId="1" xfId="0" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" indent="1" wrapText="1"/></xf>\n    <xf numFmtId="4" fontId="0" fillId="3" borderId="1" xfId="0" applyFill="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="center" indent="1"/></xf>\n  </cellXfs>\n</styleSheet>'
+else j=c3?'<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">\n  <fonts count="3">\n    <font><sz val="12"/><name val="Calibri"/><color rgb="FF000000"/></font>\n    <font><b/><sz val="18"/><name val="Calibri"/><color rgb="FF000000"/></font>\n    <font><b/><sz val="12"/><name val="Calibri"/><color rgb="FF000000"/></font>\n  </fonts>\n  <fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF5F7FA"/><bgColor indexed="64"/></patternFill></fill></fills>\n  <borders count="3"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FFD6DFE8"/></left><right style="thin"><color rgb="FFD6DFE8"/></right><top style="thin"><color rgb="FFD6DFE8"/></top><bottom style="thin"><color rgb="FFD6DFE8"/></bottom><diagonal/></border><border><left style="thin"><color rgb="FF64748B"/></left><right style="thin"><color rgb="FF64748B"/></right><top style="thin"><color rgb="FF64748B"/></top><bottom style="thin"><color rgb="FF64748B"/></bottom><diagonal/></border></borders>\n  <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>\n  <cellXfs count="9">\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="0"/>\n    <xf numFmtId="0" fontId="1" fillId="0" borderId="2" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="center"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="2" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="2" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" horizontal="center"/></xf>\n    <xf numFmtId="0" fontId="0" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" horizontal="center"/></xf>\n    <xf numFmtId="0" fontId="2" fillId="0" borderId="2" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="center" horizontal="center"/></xf>\n  </cellXfs>\n</styleSheet>':'<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><numFmts count="1"><numFmt numFmtId="164" formatCode="#,##0.00"/></numFmts><fonts count="3"><font><sz val="12"/><name val="Calibri"/><color rgb="FF172554"/></font><font><b/><sz val="18"/><name val="Calibri"/><color rgb="FFFFFFFF"/></font><font><b/><sz val="12"/><name val="Calibri"/><color rgb="FFFFFFFF"/></font></fonts><fills count="5"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF1E2769"/><bgColor indexed="64"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FF334155"/><bgColor indexed="64"/></patternFill></fill><fill><patternFill patternType="solid"><fgColor rgb="FFF1F5F9"/><bgColor indexed="64"/></patternFill></fill></fills><borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="8"><xf/><xf fontId="1" fillId="2" applyFill="1" applyFont="1"><alignment vertical="center"/></xf><xf fontId="2" fillId="3" applyFill="1" applyFont="1"><alignment vertical="center"/></xf><xf fontId="2" fillId="2" applyFill="1" applyFont="1"><alignment wrapText="1" vertical="center"/></xf><xf fontId="0"><alignment vertical="center" wrapText="1"/></xf><xf fontId="0" numFmtId="164" applyNumberFormat="1"><alignment vertical="center"/></xf><xf fontId="0" fillId="4" applyFill="1"><alignment vertical="center" wrapText="1"/></xf><xf fontId="0" fillId="4" applyFill="1" numFmtId="164" applyNumberFormat="1"><alignment vertical="center"/></xf></cellXfs></styleSheet>'
 n.$2("xl/styles.xml",j)
 j=k.a
 n.$2("xl/worksheets/sheet1.xml",j.charCodeAt(0)==0?j:j)
-if(c4){if(d3)b2=1746250
-else b2=c7?265e4:2057400
-if(d3)b3=1092200
-else b3=c7?1657476:1286703
-b4=d3?95250:0
-a9.F(0,A.bHX("xl/media/adabag.png",c8.length,c8))
+if(c3){b2=c6&&!d2?265e4:2057400
+b3=c6&&!d2?1657476:1286703
+a9.F(0,A.bHX("xl/media/adabag.png",c7.length,c7))
 n.$2("xl/worksheets/_rels/sheet1.xml.rels",'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/drawing" Target="../drawings/drawing1.xml"/></Relationships>')
 n.$2("xl/drawings/_rels/drawing1.xml.rels",'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="../media/adabag.png"/></Relationships>')
-j=""+b4
-i=""+b2
-h=""+b3
-n.$2("xl/drawings/drawing1.xml",'<xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><xdr:oneCellAnchor><xdr:from><xdr:col>0</xdr:col><xdr:colOff>'+j+"</xdr:colOff><xdr:row>0</xdr:row><xdr:rowOff>"+j+'</xdr:rowOff></xdr:from><xdr:ext cx="'+i+'" cy="'+h+'"/><xdr:pic><xdr:nvPicPr><xdr:cNvPr id="1" name="Adaba\u011f Market"/><xdr:cNvPicPr><a:picLocks noChangeAspect="1"/></xdr:cNvPicPr></xdr:nvPicPr><xdr:blipFill><a:blip r:embed="rId1"/><a:stretch><a:fillRect/></a:stretch></xdr:blipFill><xdr:spPr><a:xfrm><a:off x="'+j+'" y="'+j+'"/><a:ext cx="'+i+'" cy="'+h+'"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></xdr:spPr></xdr:pic><xdr:clientData fPrintsWithSheet="1"/></xdr:oneCellAnchor></xdr:wsDr>')}b5=A.a7o(B.dL)
-new A.aVh().b2P(a9,b5,!1,null,1,null)
-return b5.CK()},
+j=""+b2
+i=""+b3
+n.$2("xl/drawings/drawing1.xml",'<xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><xdr:oneCellAnchor><xdr:from><xdr:col>0</xdr:col><xdr:colOff>0</xdr:colOff><xdr:row>0</xdr:row><xdr:rowOff>0</xdr:rowOff></xdr:from><xdr:ext cx="'+j+'" cy="'+i+'"/><xdr:pic><xdr:nvPicPr><xdr:cNvPr id="1" name="Adaba\u011f Market"/><xdr:cNvPicPr><a:picLocks noChangeAspect="1"/></xdr:cNvPicPr></xdr:nvPicPr><xdr:blipFill><a:blip r:embed="rId1"/><a:stretch><a:fillRect/></a:stretch></xdr:blipFill><xdr:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="'+j+'" cy="'+i+'"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></xdr:spPr></xdr:pic><xdr:clientData fPrintsWithSheet="1"/></xdr:oneCellAnchor></xdr:wsDr>')}b4=A.a7o(B.dL)
+new A.aVh().b2P(a9,b4,!1,null,1,null)
+return b4.CK()},
 bAB:function bAB(){},
 bAA:function bAA(){},
 bAz:function bAz(a,b){this.a=a
