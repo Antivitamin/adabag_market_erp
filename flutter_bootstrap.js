@@ -43,13 +43,13 @@ _flutter.buildConfig = {"engineRevision":"deb287481e3ce9468f3434937ced4240a70539
 
 // A new URL for each release avoids stale JavaScript in installed PWAs.
 for (const build of _flutter.buildConfig.builds) {
-  if (build.mainJsPath) build.mainJsPath += '?v=20261121-etiket-kasa-91';
+  if (build.mainJsPath) build.mainJsPath += '?v=20261121-skt-iade-92';
 }
 (async () => {
   if ('serviceWorker' in navigator) {
     const scope = new URL('.', document.baseURI).href;
     const registrations = await navigator.serviceWorker.getRegistrations();
-    await Promise.all(registrations.filter(r => r.scope === scope).map(r => r.unregister()));
+    await Promise.all(registrations.filter(r => r.scope === scope && [r.active,r.waiting,r.installing].filter(Boolean).length>0 && [r.active,r.waiting,r.installing].filter(Boolean).every(w=>new URL(w.scriptURL).pathname.endsWith('/flutter_service_worker.js'))).map(r=>r.unregister()));
   }
 })().catch(() => {});
 _flutter.loader.load();
